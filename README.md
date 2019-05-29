@@ -1,3 +1,8 @@
+# What?
+http://mapstruct.org/
+
+A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high prescription costs from stress.
+
 # Exercise
 
 - Map `Customer` to a `CustomerDto`
