@@ -23,6 +23,7 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
 
 - IDE plugin needed for auto generation
   - But easy to work around by just manual `compile` from IDE
+  - Note that you may need to `clean` then `compile` if you change any Mapper class names.
 - Complex mapping cases may not have a direct struct to struct mapping available.
    - Can work around by passing entire top level source object with `"."` to a custom mapper
      - `@Mapping( target = "ownerType", source = ".", qualifiedByName = {"customMapMethod"})`
