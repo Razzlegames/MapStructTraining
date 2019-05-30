@@ -28,6 +28,7 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
    - Can work around by passing entire top level source object with `"."` to a custom mapper
      - `@Mapping( target = "ownerType", source = ".", qualifiedByName = {"customMapMethod"})`
    - Or, you can use `@AfterMapping` for hairier mapping issues
+     - http://mapstruct.org/documentation/stable/reference/html/#customizing-mappings-with-before-and-after 
      - It will be the last step for the mapper before returning the result. 
      - You basically do a manual mapping, for that field, in this case.
      
