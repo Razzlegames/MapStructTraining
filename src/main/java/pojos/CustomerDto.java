@@ -8,6 +8,10 @@ public class CustomerDto {
     private String age;
     private String isoTimeCreated;
     private String country;
+    private String someConstant;
+
+    public CustomerDto() {
+    }
 
     public String getCombinationKeyOfNameAndAge() {
         return combinationKeyOfNameAndAge;
@@ -47,5 +51,13 @@ public class CustomerDto {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getSomeConstant() {
+        return someConstant;
+    }
+
+    public void setSomeConstant(String someConstant) {
+        this.someConstant = someConstant;
     }
 }

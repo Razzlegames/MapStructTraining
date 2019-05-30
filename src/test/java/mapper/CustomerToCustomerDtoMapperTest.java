@@ -31,6 +31,7 @@ public class CustomerToCustomerDtoMapperTest {
         assertEquals(Instant.ofEpochSecond(customer.getEpocTimeCreated()).toString(),
             customerDto.getIsoTimeCreated());
         assertEquals(customer.getCountryCode(), customerDto.getCountry());
+        assertEquals("someConstant", customerDto.getSomeConstant());
     }
 
 }
