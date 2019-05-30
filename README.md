@@ -30,6 +30,14 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
    - Or, you can use `@AfterMapping` for hairier mapping issues
      - It will be the last step for the mapper before returning the result. 
      - You basically do a manual mapping, for that field, in this case.
+     
+      ```java
+      @AfterMapping
+      public ObjectMappingTo afterMap(ObjectMappingFrom from) {
+         // Do any mapping not easily handled by Mapstruct idioms
+         return objectMappingTo;
+      }
+      ```
 
 # Exercise
 
