@@ -12,6 +12,11 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
 - Easy to read
 - Easy to inspect generated `Java` code to see what is actually happening (adding breakpoints etc).
 
+# FAQ
+
+- What about unmapped members? What happens
+  - You can decide if they should be `IGNORE`d, should post a build `WARN`ing, or cause a build `ERROR`, using the compiler argument `mapstruct.unmappedTargetPolicy` `{IGNOR | WARN | ERROR}`
+
 # Challenges
 
 - IDE plugin needed for auto generation
