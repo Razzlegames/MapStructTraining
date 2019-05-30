@@ -33,9 +33,8 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
      
       ```java
       @AfterMapping
-      public ObjectMappingTo afterMap(ObjectMappingFrom from) {
+      protected void afterMap(ObjectMappingFrom from, @MappingTarget ObjectMappingTo) {
          // Do any mapping not easily handled by Mapstruct idioms
-         return objectMappingTo;
       }
       ```
 
