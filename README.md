@@ -14,8 +14,10 @@ A quick and easy framework to Map Pojos, eliminate boiler plate and avoid high p
 
 # FAQ
 
-- What about unmapped members? What happens
+- What about unmapped members? What happens?
   - You can decide if they should be `IGNORE`d, should post a build `WARN`ing, or cause a build `ERROR`, using the compiler argument `mapstruct.unmappedTargetPolicy` `{IGNOR | WARN | ERROR}`
+- Where is the generated code?
+  - This is configurable with compiler argument `-s $DIR`, but by default will be in `target/generated-sources/`
 
 # Challenges
 
