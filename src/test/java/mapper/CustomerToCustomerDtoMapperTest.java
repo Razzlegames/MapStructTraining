@@ -17,8 +17,10 @@ public class CustomerToCustomerDtoMapperTest {
 
         Customer customer = new Customer();
         customer.setAge(10);
-        customer.setLocation("USA");
+        customer.setLocation("PHX_USA");
         customer.setName("Bob");
+        customer.setEpocTimeCreated(0);
+        customer.setCountryCode("USA");
 
         CustomerToCustomerDtoMapper mapper = Mappers.getMapper(CustomerToCustomerDtoMapper.class);
         CustomerDto customerDto = mapper.map(customer);
@@ -28,6 +30,7 @@ public class CustomerToCustomerDtoMapperTest {
         assertEquals(customer.getName()+ ":" + customer.getAge(), customerDto.getCombinationKeyOfNameAndAge());
         assertEquals(Instant.ofEpochSecond(customer.getEpocTimeCreated()).toString(),
             customerDto.getIsoTimeCreated());
+        assertEquals(customer.getCountryCode(), customerDto.getCountry());
     }
 
 }

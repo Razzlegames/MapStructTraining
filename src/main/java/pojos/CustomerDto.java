@@ -7,6 +7,7 @@ public class CustomerDto {
     private String location;
     private String age;
     private String isoTimeCreated;
+    private String country;
 
     public String getCombinationKeyOfNameAndAge() {
         return combinationKeyOfNameAndAge;
@@ -38,5 +39,13 @@ public class CustomerDto {
 
     public void setIsoTimeCreated(String isoTimeCreated) {
         this.isoTimeCreated = isoTimeCreated;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }

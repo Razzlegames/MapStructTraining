@@ -6,6 +6,7 @@ public class Customer {
     private int age;
     private String location;
     private long epocTimeCreated;
+    private String countryCode;
 
     public String getName() {
         return name;
@@ -37,5 +38,13 @@ public class Customer {
 
     public void setEpocTimeCreated(long epocTimeCreated) {
         this.epocTimeCreated = epocTimeCreated;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
     }
 }
